@@ -1,0 +1,56 @@
+<br />
+
+<h1 style="font-size: 250%; font-family: Bebas Neue; padding-top: 2.5%">
+  Salt Houses & Parallels to the real world
+</h1>
+
+<h3>Created by Zayd Krunz. Some content from Wikipedia.</h3>
+
+<br />
+
+<h2>Filter</h2>
+
+<div style="display: flex; justify-content: center">
+  <mat-button-toggle-group
+    [value]="state"
+    #slattery="matButtonToggleGroup"
+    (change)="beginSort($event)"
+  >
+    <mat-button-toggle
+      value="salthouses"
+      matTooltip="Displays events in Salt Houses only."
+      >Salt Houses</mat-button-toggle
+    >
+    <mat-button-toggle
+      value="realworld"
+      matTooltip="Displays events that occurred in the real world only."
+      >Real World</mat-button-toggle
+    >
+    <mat-button-toggle
+      value="combined"
+      matTooltip="Displays events from both Salt Houses and the real world."
+      >Combined</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>
+
+<br />
+
+<p-timeline [value]="events" align="alternate">
+  <ng-template pTemplate="content" let-event>
+    <p-card [header]="event.header" [subheader]="event.location">
+      <p>{{event.description}}</p>
+    </p-card>
+  </ng-template>
+</p-timeline>
+
+<br />
+
+<div style="display: flex; justify-content: center; padding-bottom: 2.5%">
+  <a
+    mat-raised-button
+    href="https://github.com/ShrootBuck/KindredPBL"
+    target="_blank"
+    >Source Code</a
+  >
+</div>
