@@ -38,6 +38,13 @@ export class TimelineTemplateDemo {
       class: "salthouses",
     },
     {
+      header: "First Intifada",
+      location: "Occupied Palestinian Territory",
+      description:
+        "The First Intifada was a series of protests and riots carried out by Palestinians. It concluded with the signing of the Oslo Accords, a pair of agreements between Israel and the Palestine Liberation Organization (PLO).",
+      class: "realworld",
+    },
+    {
       header: "Family",
       location: "Kuwait City",
       description:
@@ -73,6 +80,13 @@ export class TimelineTemplateDemo {
       class: "salthouses",
     },
     {
+      header: "Second Intifada",
+      location: "Occupied Palestinian Territories",
+      description:
+        "The Second Intifada was a major uprising by Palestinians against the Israeli occupation. Within the first few days of the uprising, the Israel Defense Forces (IDF) had fired one million rounds of ammunition.",
+      class: "realworld",
+    },
+    {
       header: "September 11 attacks",
       location: "Lower Manhattan, New York",
       description:
@@ -87,10 +101,17 @@ export class TimelineTemplateDemo {
       class: "salthouses",
     },
     {
+      header: "2006 Lebanon War",
+      location: "Lebanon",
+      description:
+        "The 2006 Lebanon War was a 34 day military conflict between Hezbollah and the IDF. The conflict started on July 12, 2006, and ended on September 8 of the same year when Israel lifted the naval blockade of Lebanon.",
+      class: "realworld",
+    },
+    {
       header: "Alzheimer's",
       location: "Amman, Jordan",
       description:
-        "Alia is diagnosed with Alzheimer's disease and, as she deteriorates, longs for a feeling of belonging and home.",
+        "Alia is diagnosed with Alzheimer's disease and, as she deteriorates, longs for a feeling of belonging and home. The book ends here.",
       class: "salthouses",
     },
   ];
